@@ -34,9 +34,12 @@ export default function Home() {
 
 		try {
 			// Fetch detection data from the backend
-			const response = await axios.get(`http://localhost:3001/detect`, {
-				params: { url },
-			});
+			const response = await axios.get(
+				`https://wp-theme-detector-api.onrender.com/detect`,
+				{
+					params: { url },
+				}
+			);
 			setData(response.data); // Set results from the backend
 		} catch (err) {
 			setError(
