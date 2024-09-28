@@ -1,0 +1,20 @@
+{
+	"name": "wp-detector-backend",
+	"version": "1.0.0",
+	"description": "This is backend for wp theme detector",
+	"main": "index.js",
+	"scripts": {
+		"server": "node index.js",
+		"dev": "nodemon index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Dheeru Rajpoot",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^1.7.7",
+		"cheerio": "^1.0.0",
+		"cors": "^2.8.5",
+		"express": "^4.21.0",
+		"nodemon": "^3.1.7"
+	}
+}
